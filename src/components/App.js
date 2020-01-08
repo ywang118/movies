@@ -79,7 +79,7 @@ class App extends React.Component {
             </div>
         </ImageModal>
 
-        <MovieList movies= {this.props.allMovies.slice(this.props.index, this.props.index+9)} showModal={this.showModal} searchTerm= {this.state.searchTerm}/>
+        <MovieList movies= {this.props.allMovies? this.props.allMovies.slice(this.props.index, this.props.index+9):[]} showModal={this.showModal} searchTerm= {this.state.searchTerm}/>
         <PageButton />
       </Fragment>
 
